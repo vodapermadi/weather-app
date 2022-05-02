@@ -41,14 +41,16 @@ const CardComponent = () => {
           <div className="container text-center text-white">
             <div className="top">
               <div className="location fs-4">
-                  { data.name && data.sys.country ? data.name + " / " + data.sys.country : "--" }
+                {data.name && data.sys.country
+                  ? data.name + " / " + data.sys.country
+                  : "--"}
               </div>
               <div className="temprature fs-1">
                 {data.main
                   ? (data.main.temp - 273.15).toFixed() + "°C"
                   : "-- °C"}
               </div>
-              <div className="temprature">
+              <div className="feels_like">
                 Fells like
                 <h1>
                   {data.main
@@ -62,6 +64,9 @@ const CardComponent = () => {
             </div>
           </div>
         </Card.Body>
+        <Card.Footer className="text-center shadow rounded-pill">
+          created VodaPermadi
+        </Card.Footer>
       </Card>
     </div>
   );

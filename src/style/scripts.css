@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap');
+
+* {
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.header1 {
+    background: linear-gradient(to right,  #adadfe, #57d7fa);
+}
+
+.CardBody1 {
+    background : linear-gradient(to right, #8b8bff, #1cb5e0);
+}
+
+.header2 {
+    background: linear-gradient(to right,  #4f4fff, #0a8baf);
+}
+
+.CardBody2 {
+    background: linear-gradient(to right,  #1919bc, #005870);
+}
